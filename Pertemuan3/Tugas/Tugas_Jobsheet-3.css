@@ -1,0 +1,88 @@
+ .navbar {
+    width: 100%;
+    background-image: linear-gradient(to right, #ffffff, rgb(9, 41, 158));
+    overflow: hidden;
+    padding: 10px;
+  }
+
+  .navbar img {
+    width: 80px; 
+    height: auto;
+    float: left;
+    margin-right: 15px;
+  }
+
+  .navbar h2 {
+    color: rgb(9, 41, 158);
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+  }
+
+.container {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 5px; 
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #dfdfdf;
+    border-radius: 10px;
+    border-color: black;
+  }
+  form {
+    width: 100%;
+    margin: auto;
+  }
+  .container h1 {
+    text-align: center;
+    color: #333;
+  }
+  label {
+    display: block;
+    margin: 10px 0 5px;
+    color: red;
+    flex: 1;
+  }
+  input[type="text"],
+  textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  input[type="checkbox"]{
+    margin-right: 10px;
+  }
+  input[type="date"]{
+    flex: 1;
+  }
+  .form-group {
+    display: flex;
+    align-items: center;
+    justify-items:start;
+    gap: 15px;
+    margin-bottom: 15px;
+  }
+  .options{
+    display: flex;
+    flex: 1;
+  }
+  .form-group-inline {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    margin-right: 15px;
+  }
+  .submit-btn {
+    display: block;
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+    border-color: black;
+    cursor: pointer;
+  }
+  .submit-btn:hover {
+    background-color: red;
+  }
