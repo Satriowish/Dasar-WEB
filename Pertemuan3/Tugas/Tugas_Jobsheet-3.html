@@ -84,7 +84,7 @@
                 type="checkbox"
                 id="Camping"
                 name="hobby"
-                value="Berenang"
+                value="Camping"
               />
               <label for="berenang">Mendaki</label>
             </div>
@@ -93,9 +93,9 @@
                 type="checkbox"
                 id="Mendaki"
                 name="hobby"
-                value="Berlari"
+                value="Mendaki"
               />
-              <label for="berlari">Camping</label>
+              <label for="Camping">Camping</label>
             </div>
             <div class="form-group-inline">
               <input
@@ -165,27 +165,27 @@
 
         if(checkData.checked){
           if (!nama) {
-            alert("Nama: Input nama belum diisi.");
+            alert("Nama belum Tidak boleh kosong");
             return;
           }
 
           if (!alamat) {
-            alert("Alamat: Input alamat belum diisi.");
+            alert("Alamat belum diisi.");
             return;
           }
 
           if (!tanggalLahir) {
-            alert("Tanggal Lahir: Input tanggal lahir belum diisi.");
+            alert("Tanggal lahir belum diisi.");
             return;
           }
 
           if (jenisKelamin.length !== 1) {
-            alert("Jenis Kelamin: Pilih salah satu jenis kelamin.");
+            alert("Pilih salah satu jenis kelamin.");
             return;
           }
 
           if (pekerjaan.length !== 1) {
-            alert("Pekerjaan: Pilih salah satu pekerjaan.");
+            alert("Pilih salah satu pekerjaan.");
             return;
           }
 
@@ -193,7 +193,7 @@
           alert("Data berhasil dikirim!");
           form.reset();
         }else{
-          alert("Check Bagian bawah jika ingin mengirimkan data");
+          alert("Centang Bagian bawah jika ingin mengirimkan data");
         }
       });
     </script>
