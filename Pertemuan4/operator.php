@@ -60,4 +60,14 @@ echo "$a *= $b = " . ($a *= $b) . "<br>";
 echo "$a /= $b = " . ($a /= $b) . "<br>";
 echo "$a % $b = " . ($a % $b) . "<br>";
 
+echo "<br>";
+
+// Langkah pada No 14
+$hasilIdentik = $a === $b;
+$hasilTidakIdentik = $a !== $b;
+
+// Soal No 3.5
+echo "Hasil Identik : " . ($hasilIdentik ? "True" : "False") . "<br>";
+echo "Hasil Tidak Identik : " . ($hasilTidakIdentik ? "True" : "False") . "<br>";
+
 ?>
