@@ -70,4 +70,15 @@ $hasilTidakIdentik = $a !== $b;
 echo "Hasil Identik : " . ($hasilIdentik ? "True" : "False") . "<br>";
 echo "Hasil Tidak Identik : " . ($hasilTidakIdentik ? "True" : "False") . "<br>";
 
+echo"<br>";
+
+// Soal Cerita No 3.6
+$totalKursi = 45; // Jumlah Total Kursi
+$kursiDiTempati = 28; // Jumlah yang sudah ditempati
+
+// Hasil
+$persenKursiKosong = (($totalKursi - $kursiDiTempati) / $totalKursi) * 100;
+echo "Presentasi Jumlah kursi kosong yang ada di Restoran adalah " . $persenKursiKosong . "%";
+
+
 ?>
