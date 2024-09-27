@@ -1,9 +1,23 @@
 <?php 
-function tampilkanHaloDunia(){
-    echo "Halo dunia! <br>";
+function tampilkanAngka (int $jumlah, int $indeks = 1) {
+    echo "Perulangan ke-{$indeks} <br>";
 
-    tampilkanHaloDunia();
+    // Panggil diri sendiri selama $indeks <= $jumalh
+    if ($indeks < $jumlah) {
+        tampilkanAngka($jumlah, $indeks + 1);
+    }
 }
+tampilkanAngka(20);
 
-tampilkanHaloDunia();
+// // Perulangan 
+// for ($i=1; $i <=25; $i++){
+//     echo "Perulangan ke-{$i} <br>";
+// }
+// function tampilkanHaloDunia(){
+//     echo "Halo dunia! <br>";
+
+//     tampilkanHaloDunia();
+// }
+
+// tampilkanHaloDunia();
 ?>
