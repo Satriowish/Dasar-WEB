@@ -3,15 +3,17 @@
     <head>
         <script src="jquery-3.7.1.js"></script>
         <script>
+         
             $(document).ready(function() {
-              $("button").click(function() {
-                $("h2").hide();
-                $(".subjudul").hide();
-                $("#paragraf").hide();
-                $("#paragraf.dua").hide();
-                $("div p.paragraf").hide();
+              $("button").click(function() { // Memilih elemen <button> dan mengikat event klik.
+                $("h2").hide(); // Memilih semua elemen <h2> di halaman.
+                $(".subjudul").hide(); // Memilih elemen dengan class subjudul.
+                $("#paragraf").hide(); // Memilih elemen dengan ID paragraf
+                $("#paragraf.dua").hide(); // Memilih elemen dengan ID paragraf.dua
+                $("div p.paragraf").hide(); // Memilih elemen <p> dengan class paragraf yang berada di dalam elemen <div>.
               });
             });
+        
         </script>
     </head>
     <body>
