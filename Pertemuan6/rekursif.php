@@ -32,7 +32,11 @@ function tampilkanMenuBertingkat(array $menu) {
     echo "<ul>";
     foreach ($menu as $key => $item) {
         echo "<li>{$item['nama']}</li>";
-         
+
+          //menampilkan submenu
+          if(isset($item['subMenu'])){
+            tampilkanMenuBertingkat($item['subMenu']);
+        } 
     }
     echo "</ul>";
 }
