@@ -3,11 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contoh Form dengan PHP</title>
+    <title>Contoh Form dengan PHP dan jQuery</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 </head>
 <body>
     <h2>Form Contoh</h2>
-    <form method="post" action="proses_lanjut.php">
+    <form id="myForm">
         <label for="buah">Pilih Buah: </label>
         <select name="buah" id="buah">
             <option value="apel">Apel</option>
@@ -27,6 +28,27 @@
         <br>
         <input type="submit" value="submit">
     </form>
+    <div id="hasil">
+        <!-- hasil akan ditampilkan di sini -->
+    </div>
+    <script>
+        $(document).ready(function () {
+            $("#myForm").submit(function (e) {
+                e.preventDefault(); //mencegah pengiriman form scr default
+                //mengumpulkan data
+                var formData = $("#myForm").serialize();
+                //kirim data ke server PHP
+                $.ajax({
+                    url: "proses_lanjut.php", // ganti nama dengan nama php yang sesuai
+                    type: "POST",
+                    data: formData,
+                    success: function (response) {
+                        //tampil hasil dari server di div "hasil"
+                        $("#hasil").html(response);
+                    }
+                });
+            });
+        });
+    </script>
 </body>
 </html>
-
