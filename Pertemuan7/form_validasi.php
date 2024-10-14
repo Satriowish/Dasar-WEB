@@ -25,6 +25,7 @@
                 var nama = $("#nama").val();
                 var email = $("#email").val();
                 var valid = true;
+
                 if (nama == "") {
                     $("#nama-error").text("Nama harus diisi!");
                     valid = false;
@@ -39,10 +40,17 @@
                 }
                 if (!valid) {
                     event.preventDefault();
-                }
+                }else {
+                    $.ajax({
+                        url: 'proses_validasi.php',
+                        type: 'POST',
+                        data: $("#myForm").serialize(),
+                        success: function (hasil) {
+                            $("#myForm")[0].reset();
+                            alert(hasil);
+                        }
             })
         })
     </script>
-
 </body>
 </html>
